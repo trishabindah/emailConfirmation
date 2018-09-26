@@ -8,7 +8,7 @@ export default class App extends React.Component {
         <View style={styles.redScreen}>
           <Image
             source={require('./assets/logo.png')}
-            style={{ width: 200, height: 200 }}
+            style={{ width: 200, height: 200, }}
           />
           <View style={styles.whiteScreen}>
             <View style={styles.emailForm}>
@@ -40,33 +40,30 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
-    backgroundColor: '#Df3',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 3,
+    backgroundColor: '#FFF'
   },
   redScreen: {
     flex: 1,
     backgroundColor: '#D43939',
-    alignItems: 'center',
-    width: '100%'
+    alignItems: 'center'
   },
   whiteScreen: {
-    flex: 2.7,
+    flex: 1,
     width: '100%',
-
+    backgroundColor: '#FFF'
+  },
+  emailForm: {
+    flex: 2,
+    backgroundColor: '#FFF',
+    alignItems: 'center',
   },
   emailAddress: {
+    marginTop: 10,
     fontSize: 20,
     fontWeight: 'bold',
     color: '#D43939',
     marginBottom: 30,
-  },
-  emailForm: {
-    flex: 2.7,
-    backgroundColor: '#FFF',
-    alignItems: 'center',
-    justifyContent: 'center'
   },
   emailStyle: {
     height: 36,
